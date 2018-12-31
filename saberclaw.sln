@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "saberclaw", "saberclaw\saberclaw.csproj", "{F12C496A-BFA0-4374-AC44-80AEC8733BDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotate", "Rotate\Rotate.csproj", "{919FEB4B-B3C3-4E95-9ADF-0B2AC4B41BF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F12C496A-BFA0-4374-AC44-80AEC8733BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12C496A-BFA0-4374-AC44-80AEC8733BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12C496A-BFA0-4374-AC44-80AEC8733BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12C496A-BFA0-4374-AC44-80AEC8733BDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{919FEB4B-B3C3-4E95-9ADF-0B2AC4B41BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{919FEB4B-B3C3-4E95-9ADF-0B2AC4B41BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{919FEB4B-B3C3-4E95-9ADF-0B2AC4B41BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{919FEB4B-B3C3-4E95-9ADF-0B2AC4B41BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6562F40D-5567-4C51-9D60-939F3ADA3480}
+	EndGlobalSection
+EndGlobal

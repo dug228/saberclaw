@@ -1,0 +1,13 @@
+﻿<Window x:Class="saberclaw.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:saberclaw"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="None" Closing="MainWindow_OnClosing" Topmost="True">
+    <Grid>
+        <MediaElement Name="media1" Source="C://ricardo.mp4" MediaEnded="Media_OnMediaEnded" Volume="1" Stretch="Fill"/>
+        <MediaElement Name="media2" Source="C://goos.mp3" MediaEnded="Media2_OnMediaEnded" Volume="0.2"/>
+    </Grid>
+</Window>
