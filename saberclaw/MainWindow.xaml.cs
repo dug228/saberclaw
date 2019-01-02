@@ -24,6 +24,7 @@ namespace saberclaw
     public partial class MainWindow : Window
     {
         static Random r = new Random();
+        static Random s = new Random();
 
         private IKeyboardMouseEvents hook;
 
@@ -147,26 +148,22 @@ namespace saberclaw
 
         public void Rotate()
         {
-            int count = 0;
-            if (count == 0)
+            int count = s.Next(4);
+            
+            switch (count)
             {
-                Display.Rotate(Convert.ToUInt32(SystemInformation.MonitorCount), Display.Orientations.DEGREES_CW_90);
-                count++;
-            }
-            else if (count == 1)
-            {
-                Display.Rotate(Convert.ToUInt32(SystemInformation.MonitorCount), Display.Orientations.DEGREES_CW_180);
-                count++;
-            }
-            else if (count == 2)
-            {
-                Display.Rotate(Convert.ToUInt32(SystemInformation.MonitorCount), Display.Orientations.DEGREES_CW_270);
-                count++;
-            }
-            else
-            {
-                Display.Rotate(Convert.ToUInt32(SystemInformation.MonitorCount), Display.Orientations.DEGREES_CW_0);
-                count = 0;
+              case 1:
+                  Display.Rotate(Convert.ToUInt32(SystemInformation.MonitorCount), Display.Orientations.DEGREES_CW_90);
+                  break;
+              case 2:
+                  Display.Rotate(Convert.ToUInt32(SystemInformation.MonitorCount), Display.Orientations.DEGREES_CW_180);
+                  break;
+              case 3:
+                  Display.Rotate(Convert.ToUInt32(SystemInformation.MonitorCount), Display.Orientations.DEGREES_CW_270);
+                  break;
+              default:
+                  Display.Rotate(Convert.ToUInt32(SystemInformation.MonitorCount), Display.Orientations.DEGREES_CW_0);
+                  break;
             }
         }
 
